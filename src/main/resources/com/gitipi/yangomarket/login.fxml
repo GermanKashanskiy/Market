@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: e6e6e6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gitipi.yangomarket.Login">
+    <children>
+        <AnchorPane layoutY="79.0" prefHeight="621.0" prefWidth="400.0" style="-fx-background-color: d1d1d1;">
+            <children>
+                <TextField fx:id="phoneInp" layoutX="102.0" layoutY="64.0" prefHeight="25.0" prefWidth="200.0" promptText="Phone Num." style="-fx-background-color: f3f3f3; -fx-background-radius: 8;" />
+                <PasswordField fx:id="passInp" layoutX="102.0" layoutY="102.0" prefHeight="25.0" prefWidth="200.0" promptText="Password" style="-fx-background-color: f3f3f3; -fx-background-radius: 8;" />
+                <Label alignment="CENTER" layoutX="105.0" layoutY="14.0" prefHeight="50.0" prefWidth="193.0" text="Authorization" textAlignment="CENTER" textFill="#8a8a8a">
+                    <font>
+                        <Font name="Impact" size="27.0" />
+                    </font>
+                </Label>
+                <Button fx:id="loginButn" layoutX="146.0" layoutY="139.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: b6b6b6; -fx-background-radius: 10;" text="Login">
+                    <font>
+                        <Font name="Impact" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="104.0" layoutY="14.0" prefHeight="50.0" prefWidth="193.0" text="Market" textAlignment="CENTER">
+            <font>
+                <Font name="Impact" size="44.0" />
+            </font>
+        </Label>
+        <Button fx:id="signUpButn" layoutX="310.0" layoutY="29.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="76.0" style="-fx-background-color: b6b6b6; -fx-background-radius: 8;" text="Sign Up" onAction="#signUpLoader">
+            <font>
+                <Font name="Impact" size="13.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
