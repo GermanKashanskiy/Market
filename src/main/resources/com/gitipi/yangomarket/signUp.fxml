@@ -33,7 +33,7 @@
                 <Font name="Impact" size="44.0" />
             </font>
         </Label>
-        <Button fx:id="SignInButn" layoutX="310.0" layoutY="29.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="76.0" style="-fx-background-color: b6b6b6; -fx-background-radius: 8;" text="Sign In">
+        <Button fx:id="SignInButn" layoutX="310.0" layoutY="29.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="76.0" style="-fx-background-color: b6b6b6; -fx-background-radius: 8;" text="Sign In" onAction="#signIn">
             <font>
                 <Font name="Impact" size="13.0" />
             </font>
