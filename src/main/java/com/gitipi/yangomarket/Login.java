@@ -14,6 +14,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 
 public class Login {
@@ -33,12 +34,19 @@ public class Login {
     public AnchorPane anchorPane;
 
     @FXML
+    void initialize() {
+        loginButn.setOnAction(event -> {
+            String loginText = phoneInp.getText().trim();
+            String passText = passInp.getText().trim();
+        });
+    }
+    @FXML
     public void signUpLoader(ActionEvent actionEvent) throws IOException {
         signUpButn.setOnAction(event -> {
 
             Parent parent = null;
             try {
-                parent = FXMLLoader.load(this.getClass().getResource("signUp.fxml"));
+                parent = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("signUp.fxml")));
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
